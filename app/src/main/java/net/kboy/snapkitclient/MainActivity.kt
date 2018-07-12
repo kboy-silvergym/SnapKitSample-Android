@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.snapchat.kit.sdk.SnapLogin
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         val button: Button = findViewById(R.id.button2)
         button.setOnClickListener {
-            val intent = Intent(this, LoginConfirmActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, LoginConfirmActivity::class.java)
+            //startActivity(intent)
+
+            SnapLogin.getAuthTokenManager(this).startTokenGrant()
         }
     }
 }
