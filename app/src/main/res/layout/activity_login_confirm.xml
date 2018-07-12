@@ -7,7 +7,7 @@
 
     <TextView
         android:gravity="center"
-        android:textSize="56dp"
+        android:textSize="48dp"
         android:textAlignment="center"
         android:id="@+id/textView2"
         android:layout_gravity="center"
