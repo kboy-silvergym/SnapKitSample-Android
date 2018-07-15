@@ -9,4 +9,4 @@ Following this document, you can implement SnapChat login.
 
 You can fetch displayName & avatar (bitmoji avatar) so far.
 
-<img src="(https://user-images.githubusercontent.com/17683316/42731432-2a7035fc-8848-11e8-9581-a8e39f99b122.gif" width="250">
+<img src="https://user-images.githubusercontent.com/17683316/42731432-2a7035fc-8848-11e8-9581-a8e39f99b122.gif" width="250">
