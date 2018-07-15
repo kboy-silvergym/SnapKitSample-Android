@@ -61,6 +61,8 @@ class MainActivity : AppCompatActivity(), LoginStateController.OnLoginStateChang
 
     private fun goToNextView(name: String, avatar: String) {
         val intent = Intent(this, LoginConfirmActivity::class.java)
+        intent.putExtra("name", name)
+        intent.putExtra("avatar", avatar)
         startActivity(intent)
     }
 
