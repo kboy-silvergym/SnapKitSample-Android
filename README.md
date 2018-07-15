@@ -30,6 +30,10 @@ WIP
 ## Bitmoji Kit
 <img src="https://user-images.githubusercontent.com/17683316/42131995-9914d864-7d49-11e8-95de-f8c053b2f706.png" width="100">
 
+You can make a Bimoji avatar view & a Bitmoji selection picker.
+
+<img src="https://user-images.githubusercontent.com/17683316/42732072-05064bbe-8855-11e8-9d8b-353e02b488a8.gif" width="250">
+
 ### Fetch avatar image
 
 WIP
