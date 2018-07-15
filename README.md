@@ -32,13 +32,6 @@ override fun onSuccess(p0: UserDataResponse?) {
 }
 ```
 
-## Creative Kit
-<img src="https://user-images.githubusercontent.com/17683316/42131997-9b7b3b8e-7d49-11e8-9651-092cf14fed1e.png" width="100">
-
-Following this document.
-https://docs.snapchat.com/docs/creative-kit/ 
-
-
 ## Bitmoji Kit
 <img src="https://user-images.githubusercontent.com/17683316/42131995-9914d864-7d49-11e8-95de-f8c053b2f706.png" width="100">
 
@@ -69,3 +62,10 @@ supportFragmentManager.beginTransaction()
     .replace(R.id.bitmoji_container, BitmojiFragment())
     .commit()
 ```
+
+
+## Creative Kit
+<img src="https://user-images.githubusercontent.com/17683316/42131997-9b7b3b8e-7d49-11e8-9651-092cf14fed1e.png" width="100">
+
+Following this document.
+https://docs.snapchat.com/docs/creative-kit/ 
