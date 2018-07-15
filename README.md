@@ -14,19 +14,29 @@ You can fetch displayName & avatar (bitmoji avatar) so far.
 
 ### 1.Call Login Method when the button tapped
 
-WIP
+```kotlin
+val button: Button = findViewById(R.id.button2)
+button.setOnClickListener {
+    SnapLogin.getAuthTokenManager(this).startTokenGrant()
+}
+```
 
 ### 2.After login, fetch user datas
 
-WIP
+```kotlin
+override fun onSuccess(p0: UserDataResponse?) {
+    val me = p0!!.data.me
+    val name = me.displayName
+    val avatar = me.bitmojiData.avatar
+    goToNextView(name, avatar)
+}
+```
 
 ## Creative Kit
 <img src="https://user-images.githubusercontent.com/17683316/42131997-9b7b3b8e-7d49-11e8-9651-092cf14fed1e.png" width="100">
 
 Following this document.
 https://docs.snapchat.com/docs/creative-kit/ 
-
-WIP
 
 
 ## Bitmoji Kit
@@ -41,8 +51,21 @@ You can make a Bimoji avatar view & a Bitmoji selection picker.
 
 ### Fetch avatar image
 
-WIP
+```kotlin
+Bitmoji.fetchAvatarUrl(this, this)
+
+// MARK: - FetchAvatarUrlCallback
+override fun onSuccess(p0: String?) {
+    currentImageURL = p0
+    val imageView: ImageView = findViewById(R.id.imageView)
+    Glide.with(this).load(p0).into(imageView)
+}
+```
 
 ### Show bitmoji pickerview
 
-WIP
+```kotlin
+supportFragmentManager.beginTransaction()
+    .replace(R.id.bitmoji_container, BitmojiFragment())
+    .commit()
+```
