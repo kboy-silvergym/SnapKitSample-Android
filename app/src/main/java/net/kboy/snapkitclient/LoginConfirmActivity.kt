@@ -1,5 +1,6 @@
 package net.kboy.snapkitclient
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
@@ -25,7 +26,8 @@ class LoginConfirmActivity: AppCompatActivity() {
 
         val button: Button = findViewById(R.id.button)
         button.setOnClickListener {
-            Toast.makeText(this, "次に遷移するよ", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, BitmojiActivity::class.java)
+            startActivity(intent)
         }
     }
 }
